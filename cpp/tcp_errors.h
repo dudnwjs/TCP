@@ -1,0 +1,24 @@
+#ifndef _ERROR_LIST_H_
+#define _ERROR_LIST_H_
+
+namespace spt_tcp {
+
+enum _NetworkResult
+{
+	NR_SUCCESS = 0,
+	NR_SOCKET_FAIL = 0x9001,
+	NR_SOCKETOPT_FAIL = 0x9002,
+	NR_BIND_FAIL = 0x9003,
+	NR_LISTEN_FAIL = 0x9004,
+	NR_ACCEPT_FAIL = 0x9005,
+	NR_RCV_FAIL = 0x9006,
+	NR_PARAM_ERROR = 0x9007,
+	NR_EMPTY_CONNECTION = 0x9008,
+	NR_SND_FAIL = 0x9009,
+	NR_ALREADY_STARTED = 0x900A,
+	NR_CONNECT_FAIL = 0x900B,
+};
+
+} //namespace spt_tcp
+
+#endif//_ERROR_LIST_H_
